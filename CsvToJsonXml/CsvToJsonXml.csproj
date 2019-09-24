@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>Zander Brook LLC</Company>
+    <Authors>Alexander B Phelps</Authors>
+    <Description>Simple conversion from CSV to JSON or XML</Description>
+    <PackageLicenseUrl>https://github.com/zbrook/CsvToJsonXml/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/zbrook/CsvToJsonXml</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zbrook/CsvToJsonXml</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageId>zbrook.CsvToJsonXml</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

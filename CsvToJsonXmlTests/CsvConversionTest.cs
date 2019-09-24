@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CsvToJsonXmlTests
 {
     [TestClass]
-    public class CsvConversionTests
+    public class CsvConversionTest
     {
         string inputFilename = @"";
         string jsonOutputFilename = @"";
