@@ -17,21 +17,21 @@ namespace CsvToJsonXmlTests
         {
             CsvToJsonXml.JsonOutputFormatter jsonFormatter = new CsvToJsonXml.JsonOutputFormatter(jsonOutputFilename, datasetName);
             CsvToJsonXml.XmlOutputFormatter xmlFormatter = new CsvToJsonXml.XmlOutputFormatter(xmlOutputFilename, datasetName, recordName);
-            CsvToJsonXml.Converter.Convert(new CsvToJsonXml.IOutputFormatter[] { jsonFormatter, xmlFormatter }, inputFilename, ",");
+            CsvToJsonXml.Converter.Convert(new CsvToJsonXml.IOutputFormatter[] { jsonFormatter, xmlFormatter }, inputFilename, true);
         }
 
         [TestMethod]
         public void GenerateJsonAsObject()
         {
             CsvToJsonXml.JsonOutputFormatter jsonFormatter = new CsvToJsonXml.JsonOutputFormatter(jsonOutputFilename, datasetName);
-            CsvToJsonXml.Converter.Convert(new CsvToJsonXml.IOutputFormatter[] { jsonFormatter }, inputFilename, ",");
+            CsvToJsonXml.Converter.Convert(new CsvToJsonXml.IOutputFormatter[] { jsonFormatter }, inputFilename, true);
         }
 
         [TestMethod]
         public void GenerateJsonAsArray()
         {
             CsvToJsonXml.JsonOutputFormatter jsonFormatter = new CsvToJsonXml.JsonOutputFormatter(jsonOutputFilename);
-            CsvToJsonXml.Converter.Convert(new CsvToJsonXml.IOutputFormatter[] { jsonFormatter }, inputFilename, ",");
+            CsvToJsonXml.Converter.Convert(new CsvToJsonXml.IOutputFormatter[] { jsonFormatter }, inputFilename, true);
         }
     }
 }
