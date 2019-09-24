@@ -42,7 +42,7 @@ namespace CsvToJsonXml
                     for (int x = 0; x < values.Length; x++)
                     {
                         foreach (var converter in converters)
-                            converter.WriteElement(propertyNames[x].Replace(' ', replaceWhitespaceWith), values[x]);
+                            converter.WriteElement(propertyNames[x].Trim().Replace(' ', replaceWhitespaceWith), values[x].Trim());
                     }
 
                     foreach (var converter in converters)
