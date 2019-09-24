@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company>Zander Brook LLC</Company>
     <Authors>Alexander B Phelps</Authors>
     <Description>Simple conversion from CSV to JSON or XML</Description>
